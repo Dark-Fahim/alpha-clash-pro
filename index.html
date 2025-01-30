@@ -27,15 +27,15 @@
     <!-- Main Start -->
     <main class="min-h-screen bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center">
         <!-- Home start -->
-        <section
-            class="home min-h-screen space-y-8 text-center flex flex-col items-center justify-center text-white hidden">
+        <section id="home-screen"
+            class="home min-h-screen space-y-8 text-center flex flex-col items-center justify-center text-white ">
             <h1 class="uppercase text-8xl text-white font-anton ">Alphabet Clash</h1>
             <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="text-black font-semibold bg-white py-3 rounded-md px-5">Play Now</button>
+            <button onclick="play()" class="text-black font-semibold bg-white py-3 rounded-md px-5">Play Now</button>
         </section>
         <!-- home end -->
         <!-- Play Ground start -->
-        <section class="play-ground">
+        <section id="play-ground" class=" hidden">
             <div class="flex flex-col items-center gap-10">
                 <!-- Screen -->
                 <div class="">
@@ -107,12 +107,21 @@
         </section>
         <!-- Play Ground end -->
         <!-- socre section start -->
-        <section class="score">
-
+        <section class="score flex items-center min-h-screen justify-center hidden">
+            <div class="text-white text-center space-y-6 bg-[#ffffff33] p-5 rounded-2xl">
+                <h2 class="text-5xl">
+                    <span class="font-extrabold">Score : </span><span>14</span>
+                </h2>
+                <button class="btn">Play Again</button>
+                <p class="text-2xl">Practice will make you Pro </p>
+            </div>
         </section>
         <!-- socre section end -->
     </main>
     <!-- Main end -->
+
+
+    <script src="./scripts/main.js"></script>
 
 </body>
 
