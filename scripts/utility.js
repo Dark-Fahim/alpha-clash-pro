@@ -11,6 +11,26 @@ function setBGColor(elementId){
     const element = document.getElementById(elementId)
     element.classList.add('bg-orange-400')
 }
+function removeBGColor(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.remove('bg-orange-400')
+}
+
+function getTextElelementById(id){
+    const element = document.getElementById(id)
+    const value = parseInt(element.innerText)
+    return value
+}
+function setValueById(id, value){
+    const element = document.getElementById(id)
+    element.innerText = value
+}
+
+function getElemenTextById(id){
+    const element = document.getElementById(id).innerText
+    return element
+    
+}
 
 function getARandomAlphabet(){
     // get or create an alphabet array
